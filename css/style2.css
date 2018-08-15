@@ -1,0 +1,253 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+
+}
+
+#topheader{
+    display: block;
+    width:1080px;
+    height: 40px;
+    background-color: #3faecc;
+    color: #ffffff;
+    text-align: center;
+    line-height: 5px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+}
+header{
+    display: block;
+    width:1080px;
+    background-color: white;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    margin-left: 0px;
+    border-radius: 4px; 
+    position: fixed;
+    top: 40px;
+    left: 0px;;
+    z-index: 5;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    display: inline;
+}
+
+.topnav a{
+    float: right;
+    color: #759e2e;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+.topnav a:hover{
+    background-color: white;
+    color:purple;
+}
+
+.topnav a:active{
+    background-color: lightgray;
+    color: red;
+}
+
+#logo{
+    float: left;
+    width: 400px;
+}
+
+h2{
+    padding: 20px;
+}
+
+.main{
+    width: 1080px;
+}
+#maintext{
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+    font-size: 20px;
+}
+#hours{
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 17px;
+    padding-top: 40px;
+}
+
+.sectOne {
+    height: 350px;
+    width: 1080px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 5em;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: 65% 35%;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+    
+.sectOne{
+    background-image: url("../images/eye.jpg");
+    background-repeat: no-repeat;
+    background-size: 1080px;
+    border: 2px solid #F8F8F8;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+
+.services{
+    height: 350px;
+    background-color: #4e85c6;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-top: 30px;
+
+}
+
+.service1, .service2, .service3{
+    border: 2px solid #F8F8F8;
+    border-radius: 20px;
+    margin:5px;
+    margin-bottom: 40px;
+    padding:10px;
+    background-color: #f1f0f0;
+    font-size: 18px;
+}
+
+
+.sectTwo {
+    height: 350px;
+    width: 1080px;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.sectTwo{
+    background-image: url("../images/eye.jpg");
+    background-repeat: no-repeat;
+    background-size: 1080px;
+    border: 2px solid #F8F8F8;
+    border-radius: 20px;
+
+}
+.service4, .service5, .service6{
+    border: 2px solid #F8F8F8;
+    border-radius: 20px;
+    background-color: #f1f0f0;
+    padding: 25px;
+    margin: 14px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+footer{
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #3faecc;
+    width: 1080px;
+    border: 2px solid #F8F8F8;
+
+}
+
+
+#directions{
+    display: block;
+    text-align:left;
+    padding-right: 20px;
+}
+#address{
+    width:350px;
+    padding-top: 20px;
+}
+#map{
+    padding-left: 40px;
+}
+
+.service7, .service8{
+    padding: 15px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.service8{
+    text-align: center;
+}
+
+#hours2{
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 50px;
+
+}
+
+@media only screen and (max-width: 1079px) {
+
+    #topheader, .header, .main, .services, .sectTwo, footer{
+        width: 100%;
+    }
+    .sectOne{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #topheader, .header, .main, .services, .sectTwo, footer{
+        width: 630px;
+    }
+    .sectOne{
+        width: 630px;
+    }
+
+    nav{
+        width: 630px;
+    }
+}
